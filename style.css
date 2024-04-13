@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    background: #000;
+    color: #fff;
+}
+.sheet{
+    background:black;
+    width: 100%;
+    height: 100vh;  
+}
+.header{
+    width: 100%;
+    height:100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(photo/netflixback.jpg);
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.logo{
+    
+    width: 150px;
+    margin-left: 7%;
+    cursor: pointer;
+}
+nav button{
+    /* height: 40px; */
+    background-color: red;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+.btn-language{
+    display:inline-flex;
+    align-self: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+}
+.btn-language img{
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.header-content{
+position: absolute;
+top: 40%;
+left: 15%;
+text-align: center;
+
+}
+.header-content h1{
+    font-size: 50px;
+    line-height: 80px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.header-content h3{
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-weight:200 ;
+}
+.header-content p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.email-signup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.405);
+    width:600px;
+    margin-left: 180px;
+}
+.email-signup input{
+    flex: 1;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    height: 50px;
+   padding-left: 10px;
+   border-radius: 4px;
+   
+}
+.email-signup button{
+    background: red;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px 30px;
+    height: 50px;
+    margin-left: 25px;
+    border-radius: 4px;
+    width: 200px;
+    font-weight: 500;
+
+}
+.features{
+   
+    padding: 50px 12px;
+    font-size: 22px;
+
+    
+}
+.row{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+}
+.text-col{
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+.img-col img{
+    display: block;
+    width: 50%;
+   margin-left: 200px;
+}
+.text-col p{
+    margin-top: 20px;
+    font-weight: 200;
+    line-height: 30px;
+}
+.text-col h1{
+    font-size: 50px;
+    font-weight: 600px;
+}
+
+
+.faq{
+    text-align: center;
+    font-size: 18px;
+}
+.faq h1{
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.accordian{
+    margin: 60px auto;
+    width: 100%;
+}
+.accordian li{
+    list-style: none;
+    width: 70%;
+    padding: 5px;
+    margin-left: 17%;
+}
+.accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+
+}
+input[type="radio"]{
+    display:none;
+}
+.accordian .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s,padding 0.5s ;
+}
+.accordian input[type="radio"]:checked+label +.content{
+    max-height:600px;
+    padding: 30px 20px;
+}
+.accordian input[type="radio"]:checked+label::after{
+    transform: rotate(135deg);
+}
+.last-email{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.405);
+    width:600px;
+    margin-left: 390px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+.last-email input{
+    flex: 1;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    height: 50px;
+   padding-left: 10px;
+   border-radius: 4px;
+   
+}
+.last-email button{
+    background: red;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px 30px;
+    height: 50px;
+    margin-left: 25px;
+    border-radius: 4px;
+    width: 200px;
+    font-weight: 500; 
+}
+#last-para{
+    font-size: 20px;
+}
+.contact{
+    padding: 20px 200px;
+}
+.contact-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.contact-row a{
+    color: rgba(255, 255, 255, 0.641);
+    text-align: left;
+    
+}
+#call a{
+    color: #fff;
+}
+#call{
+    margin-bottom: 30px;
+}
+.btn{
+    background: transparent;
+    color: #fff;
+   margin-bottom: 20px;
+    border-color: rgba(255, 255, 255, 0.282);
+    padding: 7px 20px;
+    font-size: 15px;
+    border-radius: 1px;
+    margin-right: 50px;
+    cursor: pointer;
+
+}
+.btn img{
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+#net-p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    margin-bottom: 80px;
+}
